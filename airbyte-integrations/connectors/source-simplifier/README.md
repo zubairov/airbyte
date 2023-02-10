@@ -30,6 +30,18 @@ First, make sure you build the latest Docker image:
 docker build . -t airbyte/source-simplifier:dev
 ```
 
+On Mac M1
+
+```
+docker buildx create --use
+```
+
+and then build
+```
+docker buildx build --platform linux/amd64,linux/arm64 --push . -t zubairov/source-simplifier:0.1.0
+```
+
+
 You can also build the connector image via Gradle:
 ```
 ./gradlew :airbyte-integrations:connectors:source-simplifier:airbyteDocker

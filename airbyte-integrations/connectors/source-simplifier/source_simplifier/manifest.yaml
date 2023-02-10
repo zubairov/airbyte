@@ -108,5 +108,5 @@ spec:
         title: Password
         airbyte_secret: true
     additionalProperties: true
-  documentation_url: ''
+  documentation_url: 'https://revos.ai'
   type: Spec
